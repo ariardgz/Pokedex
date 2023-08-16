@@ -1,7 +1,25 @@
 html{
     background-color: black;
+   
 }
 
+body{
+    background-image: url("pichachu y ash.png");
+
+}
 .logo{
     width: 400px;
+}
+button{
+
+  text-decoration: black;
+  padding: 10px;
+  font-size: 20px;
+  color: #111010;
+  border-radius: 10px;
+  display: block;
+  margin: 20% 50%;
+  text-align: center;
+
+
 }
