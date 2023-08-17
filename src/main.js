@@ -1,5 +1,6 @@
 import { Linter } from 'eslint';
 import { example } from './data.js';
+import pokemon from './data/pokemon/pokemon.js';
 
 // import data from './data/lol/lol.js';
 import data from './data/pokemon/pokemon.js';
@@ -7,4 +8,13 @@ import data from './data/pokemon/pokemon.js';
 
 //console.log(data["pokemon"][0]["name"]);
 const imagenPokemon = data.pokemon[1].img;
-document.getElementById("#imagenPokemon.src") = imagenPokemon;
+//document.getElementById("#imagenPokemon.src") = imagenPokemon;
+console.log(data.pokemon[2].name);
+//elegir con un selector 
+const nombrepokemon = document.querySelector("#nombrepokemon");
+nombrepokemon.innerHTML=(data.pokemon[2].name);
+console.log(document.querySelector("#nombrepokemon"));
+
+
+
+
