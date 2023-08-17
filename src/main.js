@@ -5,10 +5,12 @@ import pokemon from './data/pokemon/pokemon.js';
 import data from './data/pokemon/pokemon.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
-console.log(data.pokemon[0].name);
+console.log(data.pokemon[2].name);
 //elegir con un selector 
 const nombrepokemon = document.querySelector("#nombrepokemon");
-nombrepokemon.innerHTML=(data.pokemon[0].name);
+nombrepokemon.innerHTML=(data.pokemon[2].name);
 console.log(document.querySelector("#nombrepokemon"));
+
+
 
 
