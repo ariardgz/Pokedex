@@ -1,0 +1,49 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    min-height: 130px;
+    background-color: azure;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo{
+    display: flex;
+
+}
+
+.logo img{
+    height: 120px;
+    margin-left: 30px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 20px;
+}
+
+nav{
+    padding: 50px;
+}
+
+nav a:hover{
+    color:white;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+
+    }
+    nav{
+        padding: 10px 30px;
+    }
+        
+
+}
