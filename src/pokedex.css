@@ -1,11 +1,14 @@
+
+/*////////////////Hacer resposivo la pagina*/
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background: url("https://images.unsplash.com/photo-1544656376-ffe19d4b7353?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80");
 }
 
 header{
     display: flex;
     min-height: 130px;
-    background-color: azure;
+    background: linear-gradient(rgba(194, 184, 184, 0.364), rgba(248, 248, 248, 0.364));
     justify-content: space-between;
     padding: 10px;
 }
@@ -47,3 +50,74 @@ nav a:hover{
         
 
 }
+/*///////////Sobre la estructura de la carta*/
+.cards{
+    width: 900px;
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 80px;
+
+}
+
+.card{
+    width: 25%;
+    border-color: black;
+    box-sizing: border-box;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: yellow;
+    
+
+    
+}
+.primeraPosicionCarta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+
+
+#descripcionPokemon {
+    display: block;
+    text-size-adjust: 9px;
+}
+
+#tipoPokemon {
+    padding: 5px 0px;
+    
+}
+
+#numeroPokemon{
+    padding: 5px 0px;
+    background-color: green;
+    padding: 5px;
+    border-radius: 5px;
+}
+figure{
+
+    margin: 0px;
+}
+
+#nombrePokemon {
+    padding: 5px 10px;
+}
+
+#descripcionPokemon{
+    text-align: justify;
+    padding: 10px;
+    font-size: small;
+}
+
+img{
+    display: flex;
+    justify-content: center;
+    margin-left: 45px;
+    margin-right: 20px;
+}
+/*Contenido de todas las cartas*/
+p#numeroPokemon{
+    margin: 0%;
+}
+
