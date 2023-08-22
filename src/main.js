@@ -1,36 +1,49 @@
-
-//import { example } from './data.js';
-
-
+import { example } from './data.js';
+import pokemon from './data/pokemon/pokemon.js';
 // import data from './data/lol/lol.js';
 import data from './data/pokemon/pokemon.js';
 // import data from './data/rickandmorty/rickandmorty.js';
+const pokemonDetailsContainer = document.querySelector("#pokemon-details");
+data.pokemon.forEach((pokemon) =>{
+  const pokemonDiv = document.createElement ("div");
+  pokemonDiv.classList.add('card')
 
-//console.log(data["pokemon"][0]["name"]);
-//const imagenPokemon = document.querySelector("src")
-//imagenPokemon.innerHTML = data.pokemon[0].img;
+  const imagenPokemon = document.createElement("img");
+  imagenPokemon.src = pokemon.img;
+  imagenPokemon.alt = pokemon.name;
+  pokemonDiv.appendChild(imagenPokemon);
 
+  const nombrepokemon =document.createElement("h2");
+  nombrepokemon.textContent = "Nombre:" + pokemon.name;
+  pokemonDiv.appendChild(nombrepokemon);
 
+  const numeropokemon =document.createElement("p");
+  numeropokemon.textContent = "Numero:" + pokemon.num;
+  pokemonDiv.appendChild(numeropokemon);
 
-//console.log(data.pokemon[2].name);
-//elegir con un selector 
+  const generacionpokemon = document.createElement("p");
+  generacionpokemon.textContent = "Generación: " + pokemon.generation.name;
+  pokemonDiv.appendChild(generacionpokemon);
 
-const nombrePokemon = document.querySelector("#nombrePokemon");
-nombrePokemon.innerHTML=(data.pokemon[0].name);
-//console.log(document.querySelector("#nombrepokemon"));
+  const tipopokemon = document.createElement("p");
+  tipopokemon.textContent = "Tipo: " + pokemon.type.join(", ");
+  pokemonDiv.appendChild(tipopokemon);
 
-const descripcionPokemon = document.querySelector("#descripcionPokemon");
-descripcionPokemon.innerHTML = (data.pokemon[0].about);
+  const alturapokemon = document.createElement("p");
+  alturapokemon.textContent = "Altura: " + pokemon.size.height;
+  pokemonDiv.appendChild(alturapokemon);
 
-const tipoPokemon = document.querySelector("#tipoPokemon");
-tipoPokemon.innerHTML = (data.pokemon[0].type[0]);
-
-const numeroPokemon = document.querySelector("#numeroPokemon");
-numeroPokemon.innerHTML = (data.pokemon[0].num);
-
-const imagenPokemon = document.getElementById("imagenPokemon").src;
-imagenPokemon.innerHTML = (data.pokemon[0].img);
-
+  const pesopokemon = document.createElement("p");
+  pesopokemon.textContent = "Peso: " + pokemon.size.weight;
+  pokemonDiv.appendChild(pesopokemon);
+  
+  const descripcionpokemon = document.createElement("p");
+  descripcionpokemon.textContent = "Descripción: " + pokemon.about;
+  pokemonDiv.appendChild(descripcionpokemon);
+  // Agrega más elementos aquí para otros detalles
+  pokemonDetailsContainer.appendChild(pokemonDiv);
+}
+)
 
 
 

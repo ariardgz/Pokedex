@@ -3,44 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Data Lovers</title>
-    <link rel="stylesheet" href="pokedex.css" />
+    <link rel="stylesheet" href="./pokedex.css" />
   </head>
+
+  <header> 
+    <div class="logo">
+      <img src="https://1000marcas.net/wp-content/uploads/2020/01/Logo-Pokemon.png"/>
+    </div>
+    <nav>
+        <a href = "" class= "nav-link ">Pokedex</a>
+        <a href = "" class="nav-link" >Games</a>
+        <a href = "" class="nav-link">Start</a>
+    </nav>
+</header>
+
   <body>
-    <header> 
-        <div class="logo">
-            <img src="https://1000marcas.net/wp-content/uploads/2020/01/Logo-Pokemon.png"/>
-
-        </div>
-        <nav>
-            <a href = "" class= "nav-link ">Pokedex</a>
-            <a href = "" class="nav-link" >Games</a>
-            <a href = "" class="nav-link">Start</a>
-        </nav>
-    </header>
-
-    <main>
-        <div class="cards">
-
-            <div class="card">
-                <figure class = "primeraPosicionCarta">
-                    <p id="numeroPokemon"></p>
-                    <h3 id="nombrePokemon"></h3>
-                    <p id="tipoPokemon"></p>
-                </figure>
-                
-                <img id= "imagenPokemon" src="https://www.serebii.net/pokemongo/pokemon/001.png">
-                <div id="contenido-card">
-                    <p id="descripcionPokemon"></p>    
-                </div>
-            </div>
-            
-            </div>
-        </div>
-  
-      
-    </main>
-    
-    
+    <div>
+        <h1>Pokémon Details</h1>
+        <div id="pokemon-details"></div>
+    </div>
     <script src="main.js" type="module"></script>
   </body>
 </html>
