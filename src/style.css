@@ -1,48 +1,23 @@
+*{
+    margin: 0%;
+}
+
 html{
     font-family: Arial, Helvetica, sans-serif;
-    background: url("https://images.unsplash.com/photo-1544656376-ffe19d4b7353?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80");
    
 }
-
-
-.logo{
-    height: 180px;
-    width: 200px;
-    margin-top: 0;
-    margin-block: 0;
-    
-}
-
-.letrasKanto{
-    font-style: italic;
-    font-size: larger;
-    color: white;
-    margin-top: 0;
-    
-    
-}
-
-
-
-.contenedorLogo{
-    background: linear-gradient(rgba(194, 184, 184, 0.364), rgba(248, 248, 248, 0.364));
-    width: 300px;
-    height: 150px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+header{
     display: flex;
-    margin-top: 70px;
-    margin-left: 150px;
+    min-height: 130px;
+    background: #0C406D ;
+    justify-content: space-between;
+    width: auto;
     
 }
+.logo img{
+    height: 120px;
+    margin-left: 30px;
 
-.contenedorInicio{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    
     
 }
 button{
@@ -54,10 +29,4 @@ button{
     text-align: center;
   
   }
-  .pikachu{
-    width: 254px;
-  }
-
-  .ash{
-    width: 250px;
-  }
+  

@@ -8,18 +8,49 @@
 
   <header> 
     <div class="logo">
-      <img src="https://1000marcas.net/wp-content/uploads/2020/01/Logo-Pokemon.png"/>
+      <img onclick = "location.href='index.html'" src="https://1000marcas.net/wp-content/uploads/2020/01/Logo-Pokemon.png"/>
     </div>
-    <nav>
-        <a href = "" class= "nav-link ">Pokedex</a>
-        <a href = "" class="nav-link" >Games</a>
-        <a href = "" class="nav-link">Start</a>
-    </nav>
+
 </header>
 
+<div id="buscador">
+    <input 
+    type='search'
+    name='valueSearch'
+    id="pokemon"
+    placeholder="Search pokemon names"
+/>
+<button id="botonSearch">Search</button>
   <body>
+</div>
+
+<div class="botones">
+    <ul class="nav-list">
+        <li class="nav-item"><button class="btn-header" id="all">All</button></li>
+        <li class="nav-item"><button class="btn-header" id="normal">Normal</button></li>
+        <li class="nav-item"><button class="btn-header" id="fire">Fire</button></li>
+        <li class="nav-item"><button class="btn-header" id="water">Water</button></li>
+        <li class="nav-item"><button class="btn-header" id="grass">Grass</button></li>
+        <li class="nav-item"><button class="btn-header" id="electric">Electric</button></li>
+        <li class="nav-item"><button class="btn-header" id="ice">Ice</button></li>
+        <li class="nav-item"><button class="btn-header" id="fighting">Fighting</button></li>
+        <li class="nav-item"><button class="btn-header" id="poison">Poison</button></li>
+        <li class="nav-item"><button class="btn-header" id="ground">Ground</button></li>
+        <li class="nav-item"><button class="btn-header" id="flying">Flying</button></li>
+        <li class="nav-item"><button class="btn-header" id="psychic">Psychic</button></li>
+        <li class="nav-item"><button class="btn-header" id="bug">Bug</button></li>
+        <li class="nav-item"><button class="btn-header" id="rock">Rock</button></li>
+        <li class="nav-item"><button class="btn-header" id="ghost">Ghost</button></li>
+        <li class="nav-item"><button class="btn-header" id="dark">Dark</button></li>
+        <li class="nav-item"><button class="btn-header" id="dragon">Dragon</button></li>
+        <li class="nav-item"><button class="btn-header" id="steel">Steel</button></li>
+        <li class="nav-item"><button class="btn-header" id="fairy">Fairy</button></li>
+
+    </ul>
+</div>
+
     <div>
-        <h1>Pokémon Details</h1>
+        
         <div id="pokemon-details"></div>
     </div>
     <script src="main.js" type="module"></script>
