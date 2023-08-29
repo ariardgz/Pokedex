@@ -6,7 +6,7 @@ import data from './data/pokemon/pokemon.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
 ////////////////////FILTRADO POR NOMBRE
-const result = [];
+/*const result = [];
 const buscarPokemon = document.querySelector('#pokemon');
 const boton = document.querySelector('#botonSearch');
 
@@ -32,6 +32,9 @@ function searchPokemon(){
 }
 */
 
+
+
+
 ////////////////////////FILTRADO POR TIPO
 
 
@@ -41,6 +44,7 @@ const pokemonDetailsContainer = document.querySelector("#pokemon-details");
 data.pokemon.forEach((pokemon) =>{
   const pokemonDiv = document.createElement ("div");
   pokemonDiv.classList.add('card');
+  
   const imagenPokemon = document.createElement("img");
   imagenPokemon.src = pokemon.img;
   imagenPokemon.alt = pokemon.name;

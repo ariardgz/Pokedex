@@ -9,14 +9,7 @@ body{
    
 }
 
-header{
-    display: flex;
-    min-height: 130px;
-    background: #0C406D ;
-    justify-content: space-between;
-    width: auto;
-    
-}
+
 
 .logo{
     display: flex;
