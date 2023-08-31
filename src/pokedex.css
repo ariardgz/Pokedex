@@ -2,14 +2,25 @@
 /*/////////////////Hacer resposivo la pagina*/
 *{
     margin: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgba(222, 218, 218, 0.647);
-   
+    background: #EFEFBB;
+	background: -webkit-linear-gradient(to left, #D4D3DD, #EFEFBB);
+	background: linear-gradient(to left, #D4D3DD, #EFEFBB);
 }
 
-
+header{
+    display: flex;
+    min-height: 130px;
+    background: #0C406D ;
+    justify-content: space-between;
+    width: auto;
+    background: linear-gradient(3deg, transparent, 50%,#0C406D 50%);
+}
 
 .logo{
     display: flex;
@@ -19,36 +30,19 @@ body{
 .logo img{
     height: 120px;
     margin-left: 30px;
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-nav a{
-    font-weight: 600px;
-    padding-right: 20px;
+    transition: .2s;
+    cursor: pointer;
 }
 
-nav{
-    padding: 50px;
+.logo img:hover{
+    transform: scale(1.2);
+    
 }
 
-nav a:hover{
-    color:white;
+
+li{
+    list-style: none;
 }
-
-@media (max-width:700px){
-    header{
-        flex-direction: column;
-
-    }
-    nav{
-        padding: 10px 30px;
-    }
-        
-
-}
-
 
 
 p{
@@ -83,32 +77,52 @@ h2{
     background: rgba(255, 255, 254, 0.758);
     padding: 10px;
     width: 250px;
-    border: solid white;
-    border-color: rgb(0, 0, 0);
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 30px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
+    transition: .3s;
+}
 
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 2rem rgba(0,0,0,.25);
 }
 #buscador{
-    position: left;
-    margin-top: 30px;
-    margin-left: 30px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 25px;
+}
+input{
+    width: 200px;
+    height: 30px;
 }
 /*/////////////////BOTONES */
 .btn-header{
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 2px;
+    padding: .5rem;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: .2s;
+    margin: 2px;
+    display: flex;
 }
+.btn-header:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 2rem rgba(0,0,0,.25);
+}
+
 .nav-list{
     display: flex;
+    flex-wrap: wrap;
 }
 .botones{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 #normal{
     background-color: #A8A878;
