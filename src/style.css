@@ -18,11 +18,23 @@ header{
     width: auto;
     
 }
+<<<<<<< HEAD
+
+header{
+    background: linear-gradient(3deg, transparent 50%,#0C406D 50%)
+ }
+ 
+
+.logo img{
+    height: 120px;
+    margin-left: 30px;
+=======
 .logoPokemon{
     height: 350px;
     width: 700px;
     margin-left: 10px;
    
+>>>>>>> aaf4342ab9fac8024c2a2d43895bc8f2e3f263d7
 
     
 }
