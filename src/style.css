@@ -4,10 +4,8 @@
 
 html{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(222, 218, 218, 0.647);
-    background: #EFEFBB;
-    background: -webkit-linear-gradient(to left, #D4D3DD, #EFEFBB);
     background: linear-gradient(to left, #D4D3DD, #EFEFBB);
+    width: 100%;
    
 }
 header{
@@ -15,26 +13,14 @@ header{
     min-height: 130px;
     background: linear-gradient(3deg, transparent, 50%,#0C406D 50% );
     justify-content: space-between;
-    width: auto;
+    width: 100%;
     
 }
-<<<<<<< HEAD
-
-header{
-    background: linear-gradient(3deg, transparent 50%,#0C406D 50%)
- }
- 
-
-.logo img{
-    height: 120px;
-    margin-left: 30px;
-=======
 .logoPokemon{
     height: 350px;
     width: 700px;
     margin-left: 10px;
    
->>>>>>> aaf4342ab9fac8024c2a2d43895bc8f2e3f263d7
 
     
 }
