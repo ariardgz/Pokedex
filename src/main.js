@@ -6,19 +6,7 @@ import data from './data/pokemon/pokemon.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 //FILTRAR POR NOMBRE ASCENDENTE A-Z
 
-const pokemonNombres = (data.pokemon.map(pokemon => pokemon.name));
-const botonOrderAZ = document.querySelector('#orderAZ');
-botonOrderAZ.addEventListener('click', OrdernarPokemonAZ);
-pokemonNombres.sort();
-function OrdernarPokemonAZ(){
-  console.log(pokemonNombres);
-  pokemonDetailsContainer.innerHTML = "";
-  for(let i= 0; i < data.pokemon.length; i++ ){
-    if(pokemonNombre.[i]===data.pokemon[i].name){
 
-    }
-
-  }
   
   pokemonNombres.forEach((pokemon) => {
     
