@@ -56,7 +56,6 @@ function OrdernarPokemonAZ (){
     // Agrega más elementos aquí para otros detalles
     pokemonDetailsContainer.appendChild(pokemonDiv);
 
-
   })
 }
 
@@ -125,6 +124,10 @@ function searchPokemon() {
 
   }
 }
+
+////////////////////////BOTON ALL 
+
+
 
 ////////////////////////FILTRADO POR TIPO
 const botones = document.querySelectorAll(".btn-header");
@@ -226,8 +229,5 @@ function mostrarTodaLaData() {
     pokemonDetailsContainer.appendChild(pokemonDiv);
 
 
-  })
-
+})  
 }
-mostrarTodaLaData();
-
