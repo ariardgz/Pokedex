@@ -23,7 +23,7 @@ function OrdernarPokemonAZ(){
   pokemonNombres.forEach((pokemon) => {
     
 
-    /*const pokemonDiv = document.createElement("div");
+    const pokemonDiv = document.createElement("div");
     pokemonDiv.classList.add('card');
     const imagenPokemon = document.createElement("img");
     imagenPokemon.src = pokemon.img;
@@ -60,7 +60,7 @@ function OrdernarPokemonAZ(){
     pokemonDiv.appendChild(descripcionpokemon);
     // Agrega más elementos aquí para otros detalles
     pokemonDetailsContainer.appendChild(pokemonDiv);
-*/
+
   })
 }
 
@@ -232,5 +232,5 @@ function mostrarTodaLaData() {
     pokemonDetailsContainer.appendChild(pokemonDiv);
 
 
-})
-
+})  
+}
