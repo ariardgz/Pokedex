@@ -1,30 +1,25 @@
 import { filterByType } from './data.js';
-import pokemon from './data/pokemon/pokemon.js';
+import { filterByAZ } from './data.js';
+
 
 // import data from './data/lol/lol.js';
 import data from './data/pokemon/pokemon.js';
 // import data from './data/rickandmorty/rickandmorty.js';
+
 //FILTRAR POR NOMBRE ASCENDENTE A-Z
 
-const pokemonNombres = (data.pokemon.map(pokemon => pokemon.name));
+
 const botonOrderAZ = document.querySelector('#orderAZ');
 botonOrderAZ.addEventListener('click', OrdernarPokemonAZ);
-pokemonNombres.sort();
-function OrdernarPokemonAZ(){
-  console.log(pokemonNombres);
+
+function OrdernarPokemonAZ (){
   pokemonDetailsContainer.innerHTML = "";
-  for(let i= 0; i < data.pokemon.length; i++ ){
-    if(pokemonNombre.[i]===data.pokemon[i].name){
-
-    }
-
-  }
+  const pokemonNombres = filterByAZ(data);
   
   pokemonNombres.forEach((pokemon) => {
-    
-
-    /*const pokemonDiv = document.createElement("div");
+    const pokemonDiv = document.createElement("div");
     pokemonDiv.classList.add('card');
+
     const imagenPokemon = document.createElement("img");
     imagenPokemon.src = pokemon.img;
     imagenPokemon.alt = pokemon.name;
@@ -60,9 +55,12 @@ function OrdernarPokemonAZ(){
     pokemonDiv.appendChild(descripcionpokemon);
     // Agrega más elementos aquí para otros detalles
     pokemonDetailsContainer.appendChild(pokemonDiv);
-*/
+
+
   })
 }
+
+
 
 
 ////////////////////FILTRADO POR NOMBRE

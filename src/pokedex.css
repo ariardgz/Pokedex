@@ -194,3 +194,10 @@ input{
     width: 300px;
     border: none;
 }
+
+#orderAZ{
+    display: inline-flex;
+    margin-right: 630px;
+    align-items: center;
+    border-radius: 10px;
+}
