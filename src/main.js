@@ -67,7 +67,7 @@ function searchPokemon() {
   }
 }
 
-
+////////////////////////BOTON ALL 
 
 
 
@@ -171,4 +171,3 @@ data.pokemon.forEach((pokemon) => {
 
 
 })
-
