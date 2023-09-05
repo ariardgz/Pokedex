@@ -6,6 +6,39 @@ import { filterByAZ } from './data.js';
 import data from './data/pokemon/pokemon.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
+// const pokemonKanto = data.pokemon.filter(pokemon => pokemon.generation.name.includes("kanto"));
+// const pokemonJohto = data.pokemon.filter(pokemon => pokemon.generation.name.includes("johto"));
+
+
+const tiposPoke = ["normal", "fire", "water","grass","electric", "ice", "fighting","poison", "ground","flying","psychic","bug","rock","ghost","dark",
+"dragon","steel", "fairy"];
+//const tiposPoke = ["grass"];
+// const kantograss = []
+const obj = {}
+const obj2 = {}
+
+for(let i = 0; i < tiposPoke.length; i++){
+ 
+  // console.log(tiposPoke[i], data.pokemon);
+  const pokemonKantoTipos = data.pokemon.filter(pokemon =>{
+    if(pokemon.type.includes(tiposPoke[i]) && pokemon.generation.name.includes('kanto') ){
+      return pokemon;
+    }
+  });
+  const pokemonJohtoTipos = data.pokemon.filter(pokemon =>{
+    if(pokemon.type.includes(tiposPoke[i]) && pokemon.generation.name.includes('johto') ){
+      return pokemon;
+    }
+  });
+ 
+  obj[tiposPoke[i]] = pokemonKantoTipos
+  obj2[tiposPoke[i]] = pokemonJohtoTipos
+
+}
+console.log(obj);
+console.log(obj2);
+
+
 //FILTRAR POR NOMBRE ASCENDENTE A-Z
 
 
@@ -229,5 +262,6 @@ function mostrarTodaLaData() {
     pokemonDetailsContainer.appendChild(pokemonDiv);
 
 
-})  
+  })  
 }
+mostrarTodaLaData();

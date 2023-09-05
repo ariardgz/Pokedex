@@ -1,4 +1,5 @@
 import { filterByType } from '../src/data.js';
+import { filterByAZ } from '../src/data.js';
 
 
 describe('filterByType ', () => {
@@ -37,12 +38,12 @@ describe('filterByType ', () => {
 });
 
 
-// describe('anotherExample', () => {
-//   it('is a function', () => {
-//     expect(typeof anotherExample).toBe('function');
-//   });
+describe('filterByAZ', () => {
+  it('is a function', () => {
+    expect(typeof filterByAZ).toBe('function');
+  });
 
-//   it('returns `anotherExample`', () => {
-//     expect(anotherExample()).toBe('OMG');
-//   });
-// });
+  //it('returns `anotherExample`', () => {
+  //expect(anotherExample()).toBe('OMG');
+  //});
+});
