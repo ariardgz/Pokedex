@@ -198,7 +198,10 @@ input{
 
 #orderAZ{
     display: inline-flex;
-    margin-right: 630px;
+    margin-right: 20px;
     align-items: center;
+    justify-content: center;
     border-radius: 10px;
+    margin-left: 0px;
+    width: 50px;
 }

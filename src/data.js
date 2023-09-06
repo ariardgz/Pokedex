@@ -71,3 +71,6 @@ export const filterByAZ = (data)=>{ // parametros
   return data.pokemon.filter(pokemon => pokemon.name).sort((a, b)=>(a.name > b.name ? 1: -1));
 
 }
+
+
+
