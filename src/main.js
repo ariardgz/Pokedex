@@ -9,15 +9,12 @@ import data from './data/pokemon/pokemon.js';
 //FILTRAR POR NOMBRE ASCENDENTE A-Z
 
 
-<<<<<<< HEAD
-=======
 const botonOrderAZ = document.querySelector('#orderAZ');
 botonOrderAZ.addEventListener('click', OrdernarPokemonAZ);
 
 function OrdernarPokemonAZ (){
   pokemonDetailsContainer.innerHTML = "";
   const pokemonNombres = filterByAZ(data);
->>>>>>> 80c51c320d69a76772a21109da081b97a1817f62
   
   pokemonNombres.forEach((pokemon) => {
     const pokemonDiv = document.createElement("div");
@@ -233,4 +230,8 @@ function mostrarTodaLaData() {
 
 
 })  
-}
+} 
+
+mostrarTodaLaData();
+
+
