@@ -72,5 +72,19 @@ export const filterByAZ = (data)=>{ // parametros
 
 }
 
+export const tiposDePokemonKanto = (data, i, tiposPoke)=>{
+  return data.pokemon.filter(pokemon =>{
+    if(pokemon.type.includes(tiposPoke[i]) && pokemon.generation.name.includes('kanto') ){
+      return pokemon;
+    }
+  })
+}
 
+export const tiposDePokemonJohto = (data, i, tiposPoke)=>{
+  return data.pokemon.filter(pokemon =>{
+    if(pokemon.type.includes(tiposPoke[i]) && pokemon.generation.name.includes('johto') ){
+      return pokemon;
+    } 
+  });
+}
 

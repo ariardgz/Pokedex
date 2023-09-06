@@ -1,35 +1,19 @@
 import { filterByType } from './data.js';
 import { filterByAZ } from './data.js';
-
+import {tiposDePokemonKanto} from './data.js'
+import {tiposDePokemonJohto} from './data.js'
 
 // import data from './data/lol/lol.js';
 import data from './data/pokemon/pokemon.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
-// const pokemonKanto = data.pokemon.filter(pokemon => pokemon.generation.name.includes("kanto"));
-// const pokemonJohto = data.pokemon.filter(pokemon => pokemon.generation.name.includes("johto"));
-
-
-const tiposPoke = ["normal", "fire", "water","grass","electric", "ice", "fighting","poison", "ground","flying","psychic","bug","rock","ghost","dark",
-"dragon","steel", "fairy"];
-//const tiposPoke = ["grass"];
-// const kantograss = []
+const tiposPoke = ["normal", "fire", "water","grass","electric", "ice", "fighting","poison", "ground","flying","psychic","bug","rock","ghost","dark","dragon","steel", "fairy"];
 const obj = {}
 const obj2 = {}
 
 for(let i = 0; i < tiposPoke.length; i++){
- 
-  // console.log(tiposPoke[i], data.pokemon);
-  const pokemonKantoTipos = data.pokemon.filter(pokemon =>{
-    if(pokemon.type.includes(tiposPoke[i]) && pokemon.generation.name.includes('kanto') ){
-      return pokemon;
-    }
-  });
-  const pokemonJohtoTipos = data.pokemon.filter(pokemon =>{
-    if(pokemon.type.includes(tiposPoke[i]) && pokemon.generation.name.includes('johto') ){
-      return pokemon;
-    }
-  });
+  const pokemonKantoTipos = tiposDePokemonKanto(data, i, tiposPoke);
+  const pokemonJohtoTipos = tiposDePokemonJohto(data, i, tiposPoke);
  
   obj[tiposPoke[i]] = pokemonKantoTipos
   obj2[tiposPoke[i]] = pokemonJohtoTipos
