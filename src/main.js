@@ -1,26 +1,23 @@
 import { filterByType } from './data.js';
 import { filterByAZ } from './data.js';
-import {tiposDePokemonKanto} from './data.js'
-import {tiposDePokemonJohto} from './data.js'
+//import {tiposDePokemonKanto} from './data.js'
+//import {tiposDePokemonJohto} from './data.js'
+
 
 // import data from './data/lol/lol.js';
 import data from './data/pokemon/pokemon.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
-const tiposPoke = ["normal", "fire", "water","grass","electric", "ice", "fighting","poison", "ground","flying","psychic","bug","rock","ghost","dark","dragon","steel", "fairy"];
-const obj = {}
-const obj2 = {}
 
-for(let i = 0; i < tiposPoke.length; i++){
-  const pokemonKantoTipos = tiposDePokemonKanto(data, i, tiposPoke);
-  const pokemonJohtoTipos = tiposDePokemonJohto(data, i, tiposPoke);
- 
-  obj[tiposPoke[i]] = pokemonKantoTipos
-  obj2[tiposPoke[i]] = pokemonJohtoTipos
+//const obj = {}
+//const obj2 = {}
 
-}
-console.log(obj);
-console.log(obj2);
+//const tiposPoke = ["normal", "fire", "water","grass","electric", "ice", "fighting","poison", "ground","flying","psychic","bug","rock","ghost","dark","dragon","steel", "fairy"];
+//const pokemonKantoTipos = tiposDePokemonKanto(data);
+//const pokemonJohtoTipos = tiposDePokemonJohto(data, i, tiposPoke);
+//console.log(pokemonKantoTipos)
+//obj2[tiposPoke[i]] = pokemonJohtoTipos
+
 
 
 //FILTRAR POR NOMBRE ASCENDENTE A-Z

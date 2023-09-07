@@ -1,13 +1,15 @@
 //import Chart from 'chart.js/auto';
+/* eslint-disable*/
 import data from './data/pokemon/pokemon.js';
-
+import {tiposDePokemonKanto} from './data.js'
+import {tiposDePokemonJohto} from './data.js'
 //const graphic = document.getElementById("myChard")
 
 const tiposPoke = ["normal", "fire", "water", "grass", "electric", "ice", "fighting", "poison", "ground", "flying", "psychic", "bug", "rock", "ghost", "dark",
   "dragon", "steel", "fairy"];
 //const tiposPoke = ["grass"];
 //const kantograss = []
-const obj = []
+const obj = {}
 const obj2 = {}
 for (let i = 0; i < tiposPoke.length; i++) {
 
@@ -23,19 +25,18 @@ for (let i = 0; i < tiposPoke.length; i++) {
     }
   }).length;
 
-  console.log(pokemonKantoTipos);
+
   obj[tiposPoke[i]] = pokemonKantoTipos;
-  console.log(pokemonJohtoTipos);
+  
   obj2[tiposPoke[i]] = pokemonJohtoTipos;
 }
-console.log(obj);
-console.log(obj2);
-console.log(tiposPoke)
 
+console.log(obj);
+console.log(tiposDePokemonKanto(data));
 const barColor = "#705898"
 
-const xKantoValue = Object.keys(obj);
-const yKantoValue = Object.values(obj);
+const xKantoValue = Object.keys(tiposDePokemonKanto(data));
+const yKantoValue = Object.values(tiposDePokemonKanto(data));
 
 const myChard = new Chart("myChart", {
   type: 'bar',
@@ -51,17 +52,17 @@ const myChard = new Chart("myChart", {
     legend: {display: false},
     title:{
       display: true,
-      text: 'Estadítica Pokemon #1 Kanto'
+      text: 'Pokemon Statistics #1 Kanto'
     }
 
   }
 }
 );
 
-const xJohtoValue = Object.keys(obj2);
-const yJohtoValue = Object.values(obj2);
+const xJohtoValue = Object.keys(tiposDePokemonJohto(data));
+const yJohtoValue = Object.values(tiposDePokemonJohto(data));
 
-const myChart2 = new Chart("myChartJohto", {
+new Chart("myChartJohto", {
   type: 'bar',
   data: {
     labels: xJohtoValue,
@@ -75,7 +76,7 @@ const myChart2 = new Chart("myChartJohto", {
     legend: {display: false},
     title:{
       display: true,
-      text: 'Estadítica Pokemon #2 Johto'
+      text: 'Pokemon Statistics #2 Johto'
     }
 
   }

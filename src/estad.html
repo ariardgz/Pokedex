@@ -7,21 +7,25 @@
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; ..."> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
   </head>
-  <body>
-    <div>
-      <button onclick="location.href='pokedex.html'">atrás</button>
+  <header> 
+    <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><lineargradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(12, 64, 109, 1)" offset="0%"></stop><stop stop-color="rgba(12, 64, 109, 1)" offset="100%"></stop></lineargradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,0L1440,70L2880,70L4320,40L5760,30L7200,0L8640,60L10080,90L11520,30L12960,90L14400,0L15840,60L17280,40L18720,80L20160,60L21600,30L23040,50L24480,60L25920,50L27360,20L28800,40L30240,50L31680,10L33120,80L34560,80L34560,100L33120,100L31680,100L30240,100L28800,100L27360,100L25920,100L24480,100L23040,100L21600,100L20160,100L18720,100L17280,100L15840,100L14400,100L12960,100L11520,100L10080,100L8640,100L7200,100L5760,100L4320,100L2880,100L1440,100L0,100Z"></path></svg>
+    <div class="logo">
+      <img onclick = "location.href='pokedex.html'" src="https://1000marcas.net/wp-content/uploads/2020/01/Logo-Pokemon.png"/>
     </div>
-
-    <section class="content">
-      <h1>Estadísticas de pokemones</h1>
+   </header>
+  <body>
+    <h1>Pokemon Statistics</h1>
+    <section class="content1">
+      <img class ="imagenKanto" src="mapaKanto.jpg" />
       <canvas id="myChart" style="width: 100%;max-width: 700px;"></canvas>
-    </section>
-    <section class="content">
-      <h1>Estadísticas de pokemones</h1>
+    </section><br>
+
+    <section class="content2">
+      <img class="imagenJohto" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/edc71eb3-7db4-435e-b38c-dd0bb1b5e693/d1detv6-63070e4e-f741-4d9f-a731-5362f71b7c06.png/v1/fit/w_448,h_288,q_70,strp/johto_map_gba_vercion_by_daviddarck_d1detv6-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9Mjg4IiwicGF0aCI6IlwvZlwvZWRjNzFlYjMtN2RiNC00MzVlLWIzOGMtZGQwYmIxYjVlNjkzXC9kMWRldHY2LTYzMDcwZTRlLWY3NDEtNGQ5Zi1hNzMxLTUzNjJmNzFiN2MwNi5wbmciLCJ3aWR0aCI6Ijw9NDQ4In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.aVxDa690Mju_tBU5AlE3XxFdtikV4ivJO6FtTBEAMgg" />
       <canvas id="myChartJohto" style="width: 100%;max-width: 700px;"></canvas>
     </section>
 
-    
+    <img class= "imagenPoke" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a519a75e-fcdf-46ad-9ef8-14f8655efcf1/dfdcrrb-41c12546-2d7d-4d0b-8a5a-80d5dee50167.png/v1/fill/w_1280,h_515/all_of_the_pokemon_ash_caught_in_kanto__indigo_lau_by_totaldramaexpanded_dfdcrrb-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTE1IiwicGF0aCI6IlwvZlwvYTUxOWE3NWUtZmNkZi00NmFkLTllZjgtMTRmODY1NWVmY2YxXC9kZmRjcnJiLTQxYzEyNTQ2LTJkN2QtNGQwYi04YTVhLTgwZDVkZWU1MDE2Ny5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.mfTfylulGn4wwaProVn7I6RI41n7ssIJj1JFWrS1E0c" />
     <script src="estad.js" type="module"></script>
   </body>
 </html>

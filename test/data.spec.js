@@ -1,4 +1,4 @@
-import { filterByType } from '../src/data.js';
+import { filterByType, tiposDePokemonKanto } from '../src/data.js';
 import { filterByAZ } from '../src/data.js';
 
 
@@ -46,4 +46,21 @@ describe('filterByAZ', () => {
   //it('returns `anotherExample`', () => {
   //expect(anotherExample()).toBe('OMG');
   //});
+});
+
+describe('tiposDePokemonKanto', () => {
+  it('is a function', () => {
+    expect(typeof tiposDePokemonKanto).toBe('function');
+  });
+
+  it('returns `anotherExample`', () => {
+    const tiposPoke = "ghost";
+    const data = {
+      "pokemon": [
+        { "name": "spinarak", "generation": { "name": "johto" }, "type": "bug" },
+        { "name": "haunter", "generation": { "name": "kanto" }, "type": "ghost" },
+        { "name": "ledian", "generation": { "name": "johto" }, "type": "bug" }]
+    }
+    expect(tiposDePokemonKanto(data, tiposPoke)).toEqual([{"name": "haunter", "generation": { "name": "kanto"},  "type": "ghost"}]);
+  });
 });
