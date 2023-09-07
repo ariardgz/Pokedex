@@ -1,28 +1,8 @@
 import { filterByType } from './data.js';
 import { filterByAZ } from './data.js';
-//import {tiposDePokemonKanto} from './data.js'
-//import {tiposDePokemonJohto} from './data.js'
-
-
-// import data from './data/lol/lol.js';
 import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
-
-
-//const obj = {}
-//const obj2 = {}
-
-//const tiposPoke = ["normal", "fire", "water","grass","electric", "ice", "fighting","poison", "ground","flying","psychic","bug","rock","ghost","dark","dragon","steel", "fairy"];
-//const pokemonKantoTipos = tiposDePokemonKanto(data);
-//const pokemonJohtoTipos = tiposDePokemonJohto(data, i, tiposPoke);
-//console.log(pokemonKantoTipos)
-//obj2[tiposPoke[i]] = pokemonJohtoTipos
-
-
 
 //FILTRAR POR NOMBRE ASCENDENTE A-Z
-
-
 const botonOrderAZ = document.querySelector('#orderAZ');
 botonOrderAZ.addEventListener('click', OrdernarPokemonAZ);
 
@@ -72,10 +52,6 @@ function OrdernarPokemonAZ (){
 
   })
 }
-
-
-
-
 ////////////////////FILTRADO POR NOMBRE
 const buscarPokemon = document.querySelector('#pokemon');
 const boton = document.querySelector('#botonSearch');
@@ -134,15 +110,8 @@ function searchPokemon() {
       // Mostrar mensaje si no se encontró el Pokémon
       pokemonDetailsContainer.innerHTML = "Pokémon no encontrado";
     }
-
-
   }
 }
-
-////////////////////////BOTON ALL 
-
-
-
 ////////////////////////FILTRADO POR TIPO
 const botones = document.querySelectorAll(".btn-header");
 botones.forEach(boton => boton.addEventListener('click', (event) => {
@@ -193,12 +162,8 @@ botones.forEach(boton => boton.addEventListener('click', (event) => {
     pokemonDiv.appendChild(descripcionpokemon);
     // Agrega más elementos aquí para otros detalles
     pokemonDetailsContainer.appendChild(pokemonDiv);
-
   })
-
-
 }
-
 ))
 /////////TODOS LOS POKEMONES 
 function mostrarTodaLaData() {
@@ -241,8 +206,6 @@ function mostrarTodaLaData() {
     pokemonDiv.appendChild(descripcionpokemon);
     // Agrega más elementos aquí para otros detalles
     pokemonDetailsContainer.appendChild(pokemonDiv);
-
-
   })  
 }
 mostrarTodaLaData();
