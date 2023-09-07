@@ -1,3 +1,4 @@
+/* */
 //import Chart from 'chart.js/auto';
 import data from './data/pokemon/pokemon.js';
 
@@ -37,7 +38,7 @@ const barColor = "#705898"
 const xKantoValue = Object.keys(obj);
 const yKantoValue = Object.values(obj);
 
-const myChard = new Chart("myChart", {
+new Chart("myChart", {
   type: 'bar',
   data: {
     labels: xKantoValue,
@@ -58,10 +59,11 @@ const myChard = new Chart("myChart", {
 }
 );
 
+
 const xJohtoValue = Object.keys(obj2);
 const yJohtoValue = Object.values(obj2);
 
-const myChart2 = new Chart("myChartJohto", {
+new Chart("myChartJohto", {
   type: 'bar',
   data: {
     labels: xJohtoValue,

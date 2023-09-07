@@ -11,7 +11,7 @@ import data from './data/pokemon/pokemon.js';
 
 
 const tiposPoke = ["normal", "fire", "water","grass","electric", "ice", "fighting","poison", "ground","flying","psychic","bug","rock","ghost","dark",
-"dragon","steel", "fairy"];
+  "dragon","steel", "fairy"];
 //const tiposPoke = ["grass"];
 // const kantograss = []
 const obj = {}
