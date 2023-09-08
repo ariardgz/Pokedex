@@ -8,7 +8,7 @@ describe('filterByType ', () => {
     expect(typeof filterByType).toBe('function');
   });
   // comportamiento deseado
-  it('returns `example`', () => {
+  it('Deberia retornar el tipo de pokemon deseado', () => {
     const botonID = "dark";
     const data = {
       "pokemon": [
@@ -35,11 +35,11 @@ describe('filterByType ', () => {
 });
 
 describe('filterByAZ', () => {
-  it('is a function', () => {
+  it('Deberia ser una funcion', () => {
     expect(typeof filterByAZ).toBe('function');
   });
   //comportamiento deseado 
-  it('returns `ordercards`', () => {
+  it('Deberia de retornar los nombre de los pokemon ordenados del A-Z', () => {
     const data = {
       "pokemon": [
         { "name": "wartortle"},
@@ -56,7 +56,7 @@ describe('tiposDePokemonKanto', () => {
     expect(typeof tiposDePokemonKanto).toBe('function');
   });
 
-  it('returns `anotherExample`', () => {
+  it('Deberia de retornar los tipos de pokemon unicamente de canto`', () => {
     const tiposPoke = "ghost";
     const data = {
       "pokemon": [
@@ -81,18 +81,17 @@ describe('tiposDePokemonKanto', () => {
 });
 
 describe('tiposDePokemonJohto', () => {
-  it('is a function', () => {
+  it('Deberia ser una funcion', () => {
     expect(typeof tiposDePokemonJohto).toBe('function');
   });
 
-  it('returns `anotherExample`', () => {
-    const tiposPoke = "psychic";
+  it('Deberia de retornar todos los pokemon de Johto', () => {
     const data = {
       "pokemon": [
         { "name": "wobbuffet", "generation": { "name": "johto" }, "type": "psychic" },
         { "name": "haunter", "generation": { "name": "kanto" }, "type": "ghost" },
         { "name": "ledian", "generation": { "name": "johto" }, "type": "bug" }]
     }
-    expect(tiposDePokemonJohto(data, tiposPoke)).toEqual([{ "name": "wobbuffet", "generation": { "name": "johto" }, "type": "psychic" }]);
+    expect(tiposDePokemonJohto(data)).toEqual({"bug": 1, "dark": 0, "dragon": 0, "electric": 0, "fairy": 0, "fighting": 0, "fire": 0, "flying": 0, "ghost": 0, "grass": 0, "ground": 0, "ice": 0, "normal": 0, "poison": 0, "psychic": 1, "rock": 0, "steel": 0, "water": 0});
   });
 });

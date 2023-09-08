@@ -81,9 +81,6 @@ export const tiposDePokemonKanto = (data, tiposPokemon) => {
   }
   const tiposPoke = ["normal", "fire", "water", "grass", "electric", "ice", "fighting", "poison", "ground", "flying", "psychic", "bug", "rock", "ghost", "dark", "dragon", "steel", "fairy"];
   tiposPoke.forEach(tipo => {
-    if(tiposPoke === ""){
-      return false
-    }
     obj[tipo] = data.pokemon.filter((pokemon) => {
       if (pokemon.type.includes(tipo) && pokemon.generation.name.includes('kanto')) {
         return pokemon;
