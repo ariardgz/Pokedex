@@ -20,8 +20,8 @@ body{
     background: linear-gradient(to left, #D4D3DD, #EFEFBB);
 }
 .logoPokemon{
-    height: 350px;
-    width: 700px;
+    height: 250px;
+    width: 400px;
     margin-left: 10px;
    
 
@@ -39,16 +39,16 @@ button{
 
 .ash{
     display: flex;
-    margin-left: 20px;
-    width: 600px;
-    height: 600px;
+    
+    width: 500px;
+    height: 500px;
     
 }
 
 main{
-    display: flex;
-    flex-direction: row;
+    display: flex;;
     width: 100%;
+    justify-content: center;
 
 }
   
@@ -56,7 +56,6 @@ button{
     width: 180px;
     height: 70px;
     margin-top: 10px;
-    margin-left: 280px;
     background-color: #0C406D;
     color: aliceblue;
     border-radius: 10px;
@@ -67,13 +66,12 @@ button{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-left: 100px;
+    align-items: center;
+    
     
 }
 
 h1{
     margin-top: 5px;
-    margin-left: 210px;
-    margin-right: 0px;
     font-size: 35px;
 }
