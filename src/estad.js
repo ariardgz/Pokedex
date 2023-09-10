@@ -1,3 +1,4 @@
+/* */
 //import Chart from 'chart.js/auto';
 /* eslint-disable*/
 import data from './data/pokemon/pokemon.js';
@@ -9,7 +10,7 @@ const barColor = "#705898"
 const xKantoValue = Object.keys(tiposDePokemonKanto(data));
 const yKantoValue = Object.values(tiposDePokemonKanto(data));
 
-const myChard = new Chart("myChart", {
+new Chart("myChart", {
   type: 'bar',
   data: {
     labels: xKantoValue,
