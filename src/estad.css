@@ -1,9 +1,29 @@
+*{
+    margin: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    height: 100 vh; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(222, 218, 218, 0.647);
+    background: #EFEFBB;
+    background: -webkit-linear-gradient(to left, #D4D3DD, #EFEFBB);
+    background: linear-gradient(to left, #D4D3DD, #EFEFBB);
+   
+}
+
+
+.logo img{
+    height: 120px;
+    margin-left: 30px;
+    transition: .2s;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.logo img:hover{
+    transform: scale(1.2);
+    
 }
 
 h1{
@@ -18,4 +38,29 @@ h1{
 
 canvas{
     max-width: 100%;
+}
+
+.content2{
+    display: flex;
+    justify-content: center;
+}
+.imagenJohto{
+    margin: 25px;
+    border-radius: 5px;
+}
+
+.content1{
+    display: flex;
+    justify-content: center;
+}
+.imagenKanto{
+    margin: 25px;
+    width: 448px;
+    height: 299.6px;
+    border-radius: 5px;
+}
+
+.imagenPoke{
+    margin-top: 35px;
+    width: 100%;
 }

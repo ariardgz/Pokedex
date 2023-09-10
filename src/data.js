@@ -58,19 +58,65 @@
 //   return 'OMG';
 // };
 
-export const filterByType = (data, botonID)=>{ // parametros
-  if(botonID === ''){
+export const filterByType = (data, botonID) => { // parametros
+  if (botonID === '') {
     return false
   }
   return data.pokemon.filter(pokemon => pokemon.type.includes(botonID));
 
 }
 
-export const filterByAZ = (data)=>{ // parametros
+export const filterByAZ = (data) => { // parametros
 
-  return data.pokemon.filter(pokemon => pokemon.name).sort((a, b)=>(a.name > b.name ? 1: -1));
+  return data.pokemon.filter(pokemon => pokemon.name).sort((a, b) => (a.name > b.name ? 1 : -1));
 
 }
 
 
+export const tiposDePokemonKanto = (data, tiposPokemon) => {
+  const obj = {}
+  if (tiposPokemon) {
+    return data.pokemon.filter((pokemon) => {
+      if (pokemon.type.includes(tiposPokemon) && pokemon.generation.name.includes('kanto')) {
+        return pokemon;
+      }
+    })
+
+  }
+  const tiposPoke = ["normal", "fire", "water", "grass", "electric", "ice", "fighting", "poison", "ground", "flying", "psychic", "bug", "rock", "ghost", "dark", "dragon", "steel", "fairy"];
+  tiposPoke.forEach(tipo => {
+
+    obj[tipo] = data.pokemon.filter((pokemon) => {
+      if (pokemon.type.includes(tipo) && pokemon.generation.name.includes('kanto')) {
+        return pokemon;
+      }
+    }).length
+  })
+
+  return obj
+}
+
+export const tiposDePokemonJohto = (data, tiposPokemon) => {
+  const obj2 = {}
+  if (tiposPokemon) {
+    return data.pokemon.filter(pokemon => {
+      if (pokemon.type.includes(tiposPokemon) && pokemon.generation.name.includes('johto')) {
+        return pokemon;
+      }
+    })
+
+  }
+
+  const tiposPoke = ["normal", "fire", "water", "grass", "electric", "ice", "fighting", "poison", "ground", "flying", "psychic", "bug", "rock", "ghost", "dark", "dragon", "steel", "fairy"];
+  tiposPoke.forEach(tipo => {
+
+    obj2[tipo] = data.pokemon.filter((pokemon) => {
+      if (pokemon.type.includes(tipo) && pokemon.generation.name.includes('johto')) {
+        return pokemon;
+      }
+    }).length
+  })
+
+  return obj2
+}
 
