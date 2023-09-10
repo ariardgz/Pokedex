@@ -63,13 +63,10 @@ export const filterByType = (data, botonID) => { // parametros
     return false
   }
   return data.pokemon.filter(pokemon => pokemon.type.includes(botonID));
-
 }
 
 export const filterByAZ = (data) => { // parametros
-
   return data.pokemon.filter(pokemon => pokemon.name).sort((a, b) => (a.name > b.name ? 1 : -1));
-
 }
 
 
@@ -81,18 +78,15 @@ export const tiposDePokemonKanto = (data, tiposPokemon) => {
         return pokemon;
       }
     })
-
   }
   const tiposPoke = ["normal", "fire", "water", "grass", "electric", "ice", "fighting", "poison", "ground", "flying", "psychic", "bug", "rock", "ghost", "dark", "dragon", "steel", "fairy"];
   tiposPoke.forEach(tipo => {
-
     obj[tipo] = data.pokemon.filter((pokemon) => {
       if (pokemon.type.includes(tipo) && pokemon.generation.name.includes('kanto')) {
         return pokemon;
       }
     }).length
   })
-
   return obj
 }
 
@@ -104,7 +98,6 @@ export const tiposDePokemonJohto = (data, tiposPokemon) => {
         return pokemon;
       }
     })
-
   }
 
   const tiposPoke = ["normal", "fire", "water", "grass", "electric", "ice", "fighting", "poison", "ground", "flying", "psychic", "bug", "rock", "ghost", "dark", "dragon", "steel", "fairy"];
@@ -116,7 +109,6 @@ export const tiposDePokemonJohto = (data, tiposPokemon) => {
       }
     }).length
   })
-
   return obj2
 }
 
