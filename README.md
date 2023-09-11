@@ -1,20 +1,16 @@
 # Pokedex 🎮
 ![image](https://github.com/ariardgz/Pokedex/assets/104811574/1600cfc8-81b9-462f-8ee1-8fe06307b181)
 
+***
 
 ## Índice
 
-* [1. Definición del producto](#1-Definición del producto)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
+* [1. Definición del producto](#1-Definición-del-producto)
+* [2. Historias de usuario](#2-Historias-de-usuario)
+* [3. Prototipo de baja fidelidad](#3-Prototipo-de-baja-fidelidad)
+* [4. Prototipo de alta fidelidad](#4-Prototipo-de-alta-fidelidad)
+* [5. Consideraciones técnicas](#5-Consideraciones-técnicas)
 
-
-
-***
 
 ## 1. Definición del producto
 ¡Prepárate para vivir una emocionante aventura en el fascinante mundo de los Pokémon de las regiones de Kanto y Johto! En nuestra página web, te ofrecemos una experiencia que te hará sentir como si tuvieras tu propia Pokédex a tu lado durante todo tu viaje como maestro Pokémon.
@@ -32,21 +28,29 @@ importantes.
 
 
 
-## 3. Prototipo del baja fidelidad
+## 3. Prototipo de baja fidelidad
 
-Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
+Desde el comienzo del desarrollo del la pagina web se plantearon 3 escenarios los cuales eran los siguientes:
+
+-Inicio se muestra una pantalla de inicio del proyecto para hacer más interactiva la interfaz con el usuario:
 
 ![image](https://github.com/ariardgz/Pokedex/assets/104811574/c50c4ae0-f678-4730-b42e-cafb47e5716d)
 
+-Pokedex: Aqui se muestran todas las cartas de los pokemon, también los botones de los filtros por tipo: por tipo, orden A-Z y el buscador. 
+
 ![image](https://github.com/ariardgz/Pokedex/assets/104811574/5d141a56-206d-42ce-97ac-1180bbb66b2c)
+
+-Estadistica: se realiza una tercera pagina para mostrar de forma separada las estadisticas de cuantos pokemon
+hay en cada región para que el usuario tenga una idea de en qué región puede atrapar más pokemon dependiendo su tipo.
 
 ![image](https://github.com/ariardgz/Pokedex/assets/104811574/a81679c7-9672-4e16-8d2f-291ba48dd867)
 
 
 
-
-
 ## 4. Prototipo de alta fidelidad
+Se eligieron los colores que llevaria la pagina, los cuales fueron obtenidos por el logo de pokemon.
+También se define la forma de moverse entre cada pagina que es con la imagen del logo de pokemon para no colocar
+un boton de regreso.
 
 ![image](https://github.com/ariardgz/Pokedex/assets/104811574/ae28bf5a-75da-4c23-8774-1a25d349ba88)
 
@@ -54,25 +58,17 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ![image](https://github.com/ariardgz/Pokedex/assets/104811574/1739f02f-72e2-4125-ae07-796f5762bcd5)
 
+Gracias al prototipo del alta fidelidad también se pudo generar la estrategia para realizar el sitio web completamente
+responsive implementado la correcta estructura en HTML y usando las propiedades adecuadas en CSS.
 
 ## 5. Consideraciones técnicas
+En el desarrollo del proyecto se implementaron test para verficar el correcto desempeño de las funciones
+utilizadas, las pruebas unitarias corrieron con los siguientes resultados:
 
 ![image](https://github.com/ariardgz/Pokedex/assets/139428035/8b21188a-a8a0-4ed8-9bd5-377ef167298a)
 
-## 6. Checklist
 
-* [ ] Usa VanillaJS.
-* [ ] Pasa linter (`npm run pretest`)
-* [ ] Pasa tests (`npm test`)
-* [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
-  lines y branches.
-* [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
-* [ ] Incluye historias de usuario en `README.md`.
-* [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
-  `README.md`.
-* [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
-  en `README.md`.
-* [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
-* [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
-* [ ] UI: Permite filtrar data en base a una condición.
-* [ ] UI: Es _responsive_.
+
+
+
+
