@@ -17,13 +17,11 @@
 ***
 
 ## 1. Definición del producto
-En esta pagina web encuentras cosas interesantes de los pokemon de las regiones de Kanto y Johto como si fuera
-una conocida pokedex para que te acompañer en todo tu trayecto como maestro pokemon.
-Puedes buscar el pokemon que desees por diferentes filtros , podrás filtrar
-por tipo de pokemon, buscarlo por su nombre y ordenar por nombre de la A-Z
+¡Prepárate para vivir una emocionante aventura en el fascinante mundo de los Pokémon de las regiones de Kanto y Johto! En nuestra página web, te ofrecemos una experiencia que te hará sentir como si tuvieras tu propia Pokédex a tu lado durante todo tu viaje como maestro Pokémon.
 
-No lo pienses más, ¡unete a la aventura de ser un maestro pokemon!
-Los 251 pokemon te esperan! 
+¿Te preguntas cómo puedes explorar este asombroso universo? ¡Es fácil! Con nuestras potentes herramientas de búsqueda y filtrado, podrás encontrar el Pokémon que desees en un abrir y cerrar de ojos. ¡Clasifícalos por tipo, busca por su nombre o ordénalos alfabéticamente de la A a la Z! Y también puedes ubicar por nombre a tu pokemon favoritoLa elección es tuya.
+
+No pierdas más tiempo, únete a nosotros y descubre los 251 Pokémon que te están esperando. Sumérgete en la maravilla de sus historias, estadísticas y habilidades. ¿Tienes lo que se necesita para convertirte en el maestro Pokémon definitivo? ¡Únete a la aventura ahora y descúbrelo por ti mismo! ¡La emoción te espera!
 
 ## 2. Historias de usuario
 Para el desarrollo de esta aplicación web se hizo uso de historias de usuario donde descubrimos lo que les interesaba saber
@@ -45,7 +43,6 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 ![image](https://github.com/ariardgz/Pokedex/assets/104811574/a81679c7-9672-4e16-8d2f-291ba48dd867)
 
 
-![image](https://github.com/ariardgz/Pokedex/assets/104811574/3f1c96f9-193e-470e-a5e3-5c3c706bc161)
 
 
 
@@ -58,20 +55,11 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 ![image](https://github.com/ariardgz/Pokedex/assets/104811574/1739f02f-72e2-4125-ae07-796f5762bcd5)
 
 
+## 5. Consideraciones técnicas
 
-## 5. Link a Zeplin 
+![image](https://github.com/ariardgz/Pokedex/assets/139428035/8b21188a-a8a0-4ed8-9bd5-377ef167298a)
 
-Los criterios para considerar que has completado este proyecto son:
-
-
-## 6. Listado de problemas que detectaste a través de tests de usabilidad 
-
-
-
-## 7. Consideraciones técnicas
-
-
-## 9. Checklist
+## 6. Checklist
 
 * [ ] Usa VanillaJS.
 * [ ] Pasa linter (`npm run pretest`)
@@ -84,9 +72,6 @@ Los criterios para considerar que has completado este proyecto son:
   `README.md`.
 * [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
   en `README.md`.
-* [ ] Incluye link a Zeplin en `README.md`.
-* [ ] Incluye el listado de problemas que detectaste a través de tests de
-  usabilidad en el `README.md`.
 * [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
 * [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
 * [ ] UI: Permite filtrar data en base a una condición.
